@@ -13,11 +13,11 @@ public class TabPut {
         public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister
                         .create(Registries.CREATIVE_MODE_TAB, MayhemTweaks.MODID);
 
-        public static final RegistryObject<CreativeModeTab> ATLASTWEAKSTAB = CREATIVE_MODE_TABS.register("atlastweakstab",
+        public static final RegistryObject<CreativeModeTab> MAYHEMTAB = CREATIVE_MODE_TABS.register("atlastweakstab",
                 () -> CreativeModeTab.builder()
                         .withTabsBefore(CreativeModeTabs.COMBAT)
                         .icon(() -> DeferredRegistries.ZINC_HAMMER.get().getDefaultInstance())
-                        .title(Component.translatable("creativetab.atlastweakstab"))
+                        .title(Component.translatable("creativetab.mayhemtab"))
                         .displayItems((parameters, output) -> {
                             output.accept(DeferredRegistries.ZINC_HAMMER.get());
                             output.accept(DeferredRegistries.WOOD_HAMMER.get());
