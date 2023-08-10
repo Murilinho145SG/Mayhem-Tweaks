@@ -12,4 +12,4 @@ Whether you're a veteran modded Minecraft player seeking a fresh and demanding a
 
 **Mod Link**
 
-[CurseForge](https://www.curseforge.com/minecraft/mc-mods/atlas-tweaks)
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/mayhem-tweaks)
