@@ -1,0 +1,16 @@
+{
+    "variants": {
+      "axis=x": {
+        "model": "mayhemtweaks:block/stripped_eva_log_horizontal",
+        "x": 90,
+        "y": 90
+      },
+      "axis=y": {
+        "model": "mayhemtweaks:block/stripped_eva_log"
+      },
+      "axis=z": {
+        "model": "mayhemtweaks:block/stripped_eva_log_horizontal",
+        "x": 90
+      }
+    }
+  }

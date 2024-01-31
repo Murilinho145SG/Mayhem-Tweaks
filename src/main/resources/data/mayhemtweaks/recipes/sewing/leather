@@ -1,0 +1,25 @@
+{
+  "type": "mayhemtweaks:sewing",
+  "pattern" : [
+    "AS",
+    "DF",
+    "GH"
+  ],
+  "items": {
+    "A": "minecraft:leather",
+    "S": "minecraft:diamond",
+    "D": "minecraft:iron_ingot",
+    "F": "minecraft:wooden_sword",
+    "G": "minecraft:stone"
+  },
+  "output": {
+    "item": "mayhemtweaks:mahemio_ingot",
+    "count": 1
+  },
+  "extras": {
+    "spool": {
+      "count": 32
+    },
+    "shears": true
+  }
+}

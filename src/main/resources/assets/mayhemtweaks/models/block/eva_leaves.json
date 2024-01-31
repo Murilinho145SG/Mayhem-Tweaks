@@ -1,0 +1,7 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+      "all": "mayhemtweaks:block/eva_leaves"
+    },
+    "render_type": "cutout"
+  }

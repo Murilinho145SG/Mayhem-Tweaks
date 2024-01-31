@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "@",
+        "@"
+    ],
+    "key": {
+        "@": {
+            "item": "mayhemtweaks:eva_planks"
+        }
+    },
+    "result": {
+        "item": "mayhemtweaks:eva_stick",
+        "count": 4
+    }
+}

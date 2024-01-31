@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "@@@",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "mayhemtweaks:eva_planks"
+        },
+        "@": {
+            "item": "minecraft:book"
+        }
+    },
+    "result": {
+        "item": "mayhemtweaks:eva_bookshelf",
+        "count": 1
+    }
+}

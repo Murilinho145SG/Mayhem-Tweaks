@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "mayhemtweaks:block/eva_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "mayhemtweaks:block/eva_wood"
+    },
+    "axis=z": {
+      "model": "mayhemtweaks:block/eva_wood",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cross",
+    "textures": {
+      "cross": "mayhemtweaks:block/eva_sapling"
+    }
+  }

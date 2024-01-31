@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "side": "mayhemtweaks:block/eva_bookshelf",
+    "bottom": "mayhemtweaks:block/eva_planks",
+    "top": "mayhemtweaks:block/eva_planks"
+  }
+}

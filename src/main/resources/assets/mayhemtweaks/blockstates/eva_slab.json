@@ -1,0 +1,13 @@
+{
+    "variants": {
+      "type=bottom": {
+        "model": "mayhemtweaks:block/eva_slab"
+      },
+      "type=double": {
+        "model": "mayhemtweaks:block/eva_planks"
+      },
+      "type=top": {
+        "model": "mayhemtweaks:block/eva_slab_top"
+      }
+    }
+  }
