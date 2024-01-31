@@ -1,6 +1,9 @@
 package com.mayhemteam.murilinho145.registry.blocks;
 
+import com.mayhemteam.murilinho145.registry.blocks.properties.EvaSaplin;
 import com.mayhemteam.murilinho145.registry.blocks.properties.EvaSapling;
+import com.mayhemteam.murilinho145.registry.blocks.properties.EvaStairsBlock;
+import com.mayhemteam.murilinho145.registry.blocks.properties.EvaTrapdoorBlock;
 import com.mayhemteam.murilinho145.registry.groups.Groups;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -20,10 +23,10 @@ public class BlockRegistry {
     public static final Block STRIPPED_EVA_LOG = new PillarBlock(EVA_SETTINGS);
     public static final Block STRIPPED_EVA_WOOD = new PillarBlock(EVA_SETTINGS);
     public static final Block EVA_PLANKS = new Block(EVA_SETTINGS);
-    public static final SaplingBlock EVA_SAPLING = new SaplingBlock(new EvaSapling(), FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.GRASS).strength(1.5f).nonOpaque());
+    public static final SaplingBlock EVA_SAPLING = new EvaSaplin(new EvaSapling(), FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.GRASS).strength(1.5f).nonOpaque());
     public static final SlabBlock EVA_SLAB = new SlabBlock(EVA_SETTINGS);
-    public static final StairsBlock EVA_STAIRS = new StairsBlock(EVA_PLANKS.getDefaultState(), EVA_SETTINGS);
-    public static final TrapdoorBlock EVA_TRAPDOOR = new TrapdoorBlock(EVA_SETTINGS);
+    public static final StairsBlock EVA_STAIRS = new EvaStairsBlock(EVA_PLANKS.getDefaultState(), EVA_SETTINGS);
+    public static final TrapdoorBlock EVA_TRAPDOOR = new EvaTrapdoorBlock(EVA_SETTINGS);
 
 
 
