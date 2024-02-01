@@ -4,6 +4,7 @@ import com.mayhemteam.murilinho145.registry.blocks.BlockRegistry;
 import com.mayhemteam.murilinho145.registry.blocks.properties.Woods;
 import com.mayhemteam.murilinho145.registry.custom.features.EvaTree;
 import com.mayhemteam.murilinho145.registry.items.ItemRegistry;
+import com.mayhemteam.murilinho145.registry.screen.ScreensServer;
 import com.mayhemteam.murilinho145.registry.worldgen.Trees;
 import net.fabricmc.api.ModInitializer;
 
@@ -33,6 +34,7 @@ public class MayhemTweaks implements ModInitializer {
 		Woods.registerStripped();
 		EvaTree.registryFeature();
 		Trees.registryWorldGen();
+		ScreensServer.registryScreens();
 	}
 
 }

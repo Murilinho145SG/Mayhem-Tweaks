@@ -8,9 +8,10 @@ import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 
 public class BlockUtils {
-    public static Block otherRegistryBlock(FabricBlockSettings settings) {
+    public static Block otherRegistryBlock(String id, FabricBlockSettings settings) {
         Block block;
         block = new Block(settings);
+        Utils.registry("block", Utils.myId(id), block);
         return block;
     }
     public static BlockItem registryBlockItem(Block block, Item.Settings settings) {
