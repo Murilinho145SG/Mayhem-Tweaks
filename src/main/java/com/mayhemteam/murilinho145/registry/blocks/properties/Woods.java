@@ -4,6 +4,8 @@ import com.mayhemteam.murilinho145.registry.blocks.BlockRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class Woods {
     public static void registerStripped() {

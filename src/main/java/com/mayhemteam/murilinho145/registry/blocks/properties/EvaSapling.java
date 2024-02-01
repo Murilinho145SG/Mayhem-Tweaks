@@ -1,5 +1,6 @@
 package com.mayhemteam.murilinho145.registry.blocks.properties;
 
+import com.mayhemteam.murilinho145.MayhemTweaks;
 import com.mayhemteam.murilinho145.registry.custom.features.EvaTree;
 import net.minecraft.block.sapling.SaplingGenerator;
 import net.minecraft.util.math.random.Random;

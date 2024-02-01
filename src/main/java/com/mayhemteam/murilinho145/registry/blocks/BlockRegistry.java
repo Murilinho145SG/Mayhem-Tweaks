@@ -17,16 +17,16 @@ public class BlockRegistry {
     public static final Block EVA_BOOKSHELF = new Block(EVA_SETTINGS);
     public static final Block EVA_FENCE = new FenceBlock(EVA_SETTINGS);
     public static final Block EVA_FENCE_GATE = new FenceGateBlock(EVA_SETTINGS);
-    public static final LeavesBlock EVA_LEAVES = new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).strength(1.5f));
+    public static final LeavesBlock EVA_LEAVES = new LeavesBlock(FabricBlockSettings.of(Material.LEAVES).sounds(BlockSoundGroup.GRASS).strength(1.5f).nonOpaque());
     public static final Block EVA_LOG = new PillarBlock(EVA_SETTINGS);
     public static final Block EVA_WOOD = new PillarBlock(EVA_SETTINGS);
     public static final Block STRIPPED_EVA_LOG = new PillarBlock(EVA_SETTINGS);
     public static final Block STRIPPED_EVA_WOOD = new PillarBlock(EVA_SETTINGS);
     public static final Block EVA_PLANKS = new Block(EVA_SETTINGS);
-    public static final SaplingBlock EVA_SAPLING = new EvaSaplin(new EvaSapling(), FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.GRASS).strength(1.5f).nonOpaque());
+    public static final SaplingBlock EVA_SAPLING = new EvaSaplin(new EvaSapling(), FabricBlockSettings.of(Material.PLANT).sounds(BlockSoundGroup.GRASS).strength(1.5f).noCollision().nonOpaque());
     public static final SlabBlock EVA_SLAB = new SlabBlock(EVA_SETTINGS);
     public static final StairsBlock EVA_STAIRS = new EvaStairsBlock(EVA_PLANKS.getDefaultState(), EVA_SETTINGS);
-    public static final TrapdoorBlock EVA_TRAPDOOR = new EvaTrapdoorBlock(EVA_SETTINGS);
+    public static final TrapdoorBlock EVA_TRAPDOOR = new EvaTrapdoorBlock(EVA_SETTINGS.nonOpaque());
 
 
 
