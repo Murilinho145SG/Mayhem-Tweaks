@@ -1,18 +1,18 @@
 {
   "variants": {
-    "facing=east,model=main": {
+    "facing=east,model=center": {
       "model": "mayhemtweaks:block/sewing_table",
       "y": 90
     },
-    "facing=north,model=main": {
+    "facing=north,model=center": {
       "model": "mayhemtweaks:block/sewing_table",
       "y": 0
     },
-    "facing=south,model=main": {
+    "facing=south,model=center": {
       "model": "mayhemtweaks:block/sewing_table",
       "y": 180
     },
-    "facing=west,model=main": {
+    "facing=west,model=center": {
       "model": "mayhemtweaks:block/sewing_table",
       "y": 270
     },

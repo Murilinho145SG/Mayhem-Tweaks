@@ -1,6 +1,6 @@
 package com.mayhemteam.murilinho145.registry.groups;
 
-import com.mayhemteam.murilinho145.Utils;
+import com.mayhemteam.murilinho145.libs.Utils;
 import com.mayhemteam.murilinho145.registry.items.ItemRegistry;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;

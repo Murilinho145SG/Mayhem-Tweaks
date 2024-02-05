@@ -1,5 +1,6 @@
-package com.mayhemteam.murilinho145;
+package com.mayhemteam.murilinho145.libs;
 
+import com.mayhemteam.murilinho145.MayhemTweaks;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;

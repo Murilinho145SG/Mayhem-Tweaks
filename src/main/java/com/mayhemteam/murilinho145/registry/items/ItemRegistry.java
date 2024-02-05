@@ -1,6 +1,6 @@
 package com.mayhemteam.murilinho145.registry.items;
 
-import com.mayhemteam.murilinho145.Utils;
+import com.mayhemteam.murilinho145.libs.Utils;
 import com.mayhemteam.murilinho145.registry.groups.Groups;
 import com.mayhemteam.murilinho145.registry.items.properties.HammerProperties;
 import com.mayhemteam.murilinho145.registry.items.properties.HammerTier;

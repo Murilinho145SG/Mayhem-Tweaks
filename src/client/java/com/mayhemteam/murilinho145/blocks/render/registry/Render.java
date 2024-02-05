@@ -14,5 +14,7 @@ public class Render {
         renderBlock(BlockRegistry.EVA_LEAVES, RenderLayer.getCutout());
         renderBlock(BlockRegistry.EVA_TRAPDOOR, RenderLayer.getCutout());
         renderBlock(BlockRegistry.EVA_SAPLING, RenderLayer.getCutout());
+        renderBlock(BlockRegistry.EVA_DOOR, RenderLayer.getCutout());
+        renderBlock(BlockRegistry.SEWING_TABLE, RenderLayer.getCutout());
     }
 }

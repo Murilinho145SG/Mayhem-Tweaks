@@ -1,6 +1,6 @@
 package com.mayhemteam.murilinho145.registry.blocks;
 
-import com.mayhemteam.murilinho145.Utils;
+import com.mayhemteam.murilinho145.libs.Utils;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -8,6 +8,9 @@ import net.minecraft.item.Item;
 import net.minecraft.util.registry.Registry;
 
 public class BlockUtils {
+    public Item getItem(Block block) {
+        return block.asItem();
+    }
     public static Block otherRegistryBlock(String id, FabricBlockSettings settings) {
         Block block;
         block = new Block(settings);
