@@ -16,6 +16,7 @@ public class ItemRegistry {
     public static ToolItem KNIFE = new SwordItem(new HammerTier(250, Items.IRON_INGOT), 5, 3.0f, new Item.Settings().group(Groups.MAINTAB));
     public static final Item RESISTORS = new Item(new Item.Settings().group(Groups.RESISTORSTAB));
     public static final Item EVA_STICK = new Item(new Item.Settings().group(Groups.NATURETAB));
+    public static final Item.Settings MAHEMIO = new Item.Settings().group(Groups.MAINTAB);
     private static final String[] resistors = {
             "aluminum",
             "antimony",
@@ -41,6 +42,21 @@ public class ItemRegistry {
         Utils.registry("item", Utils.myId("resistor_mahemio"), RESISTORS);
         Utils.registry("item", Utils.myId("eva_stick"), EVA_STICK);
         Utils.registry("item", Utils.myId("knife"), KNIFE);
+        Utils.registry("item", Utils.myId("mahemio_alloy"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_clump"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_crystal"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_dirty_dust"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_dust"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_fragment"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_gear"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_gravel"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_ingot"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_plate"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("raw_mahemio"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_rod"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_shard"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("mahemio_wire"), new Item(MAHEMIO));
+        Utils.registry("item", Utils.myId("ether_fragment"), new Item(MAHEMIO));
 
         for (String ids : resistors) {
             Utils.registry("item", Utils.myId("resistor_" + ids), new Item(new Item.Settings().group(Groups.RESISTORSTAB)));

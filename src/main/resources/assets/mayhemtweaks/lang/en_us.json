@@ -100,5 +100,8 @@
   "tooltip.mayhem.resistor_silver": "A Reliable Electrical Component Made of Silver",
   "tooltip.mayhem.resistor_sodium": "A Reliable Electrical Component Made of Sodium",
   "tooltip.mayhem.resistor_tin": "A Reliable Electrical Component Made of Tin",
-  "tooltip.mayhem.resistor_zinc": "A Reliable Electrical Component Made of Zinc"
+  "tooltip.mayhem.resistor_zinc": "A Reliable Electrical Component Made of Zinc",
+  "devmode.mayhem.active": "Active Developer Mode",
+  "devmode.mayhem.disabled": "Developer Mode Disabled",
+  "devmode.mayhem.already": "Already active"
 }

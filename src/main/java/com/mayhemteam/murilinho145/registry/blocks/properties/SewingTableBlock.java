@@ -2,8 +2,6 @@ package com.mayhemteam.murilinho145.registry.blocks.properties;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
@@ -21,8 +19,6 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-
-import java.util.function.BiPredicate;
 
 public class SewingTableBlock extends BlockWithEntity {
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
@@ -62,7 +58,7 @@ public class SewingTableBlock extends BlockWithEntity {
         super.onPlaced(world, pos, state, placer, itemStack);
         if (!world.isClient) {
             BlockPos blockPos = pos.offset(state.get(FACING).getOpposite().rotateYCounterclockwise());
-            if (world.getBlockState(blockPos).getBlock() != Blocks.AIR) {
+            if (world.getBlockState(blockPos).getBlock() == Blocks.AIR) {
                 world.setBlockState(blockPos, state.with(SIDE, SewingTableType.CENTER));
                 world.updateNeighbors(pos, Blocks.AIR);
                 world.updateNeighbors(blockPos, Blocks.AIR);
@@ -142,10 +138,6 @@ public class SewingTableBlock extends BlockWithEntity {
 
     public enum SewingTableType implements StringIdentifiable {
         CENTER, SIDE;
-
-        private SewingTableType() {
-
-        }
 
         @Override
         public String toString() {

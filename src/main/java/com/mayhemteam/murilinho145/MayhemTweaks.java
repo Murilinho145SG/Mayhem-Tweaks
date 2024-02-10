@@ -1,18 +1,15 @@
 package com.mayhemteam.murilinho145;
 
-import com.mayhemteam.murilinho145.libs.Utils;
 import com.mayhemteam.murilinho145.registry.blocks.BlockEntityRegistry;
 import com.mayhemteam.murilinho145.registry.blocks.BlockRegistry;
 import com.mayhemteam.murilinho145.registry.blocks.properties.Woods;
+import com.mayhemteam.murilinho145.registry.custom.commands.RegistryCommands;
 import com.mayhemteam.murilinho145.registry.custom.features.EvaTree;
 import com.mayhemteam.murilinho145.registry.items.ItemRegistry;
 import com.mayhemteam.murilinho145.registry.screen.ScreensRegistries;
-import com.mayhemteam.murilinho145.registry.screen.SewingTableScreenHandler;
 import com.mayhemteam.murilinho145.registry.worldgen.Trees;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.screenhandler.v1.ScreenHandlerRegistry;
-import net.minecraft.screen.ScreenHandlerType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,6 +28,7 @@ public class MayhemTweaks implements ModInitializer {
 		Trees.registryWorldGen();
 		BlockEntityRegistry.register();
 		ScreensRegistries.register();
+		RegistryCommands.CommandRegistry();
 	}
 
 }
