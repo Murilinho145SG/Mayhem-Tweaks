@@ -15,6 +15,7 @@ import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.*;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -58,11 +59,9 @@ public class SewingTableBlock extends BlockWithEntity {
         super.onPlaced(world, pos, state, placer, itemStack);
         if (!world.isClient) {
             BlockPos blockPos = pos.offset(state.get(FACING).getOpposite().rotateYCounterclockwise());
-            if (world.getBlockState(blockPos).getBlock() == Blocks.AIR) {
                 world.setBlockState(blockPos, state.with(SIDE, SewingTableType.CENTER));
                 world.updateNeighbors(pos, Blocks.AIR);
-                world.updateNeighbors(blockPos, Blocks.AIR);
-            }
+                state.updateNeighbors(world, pos, 3);
         }
     }
 
@@ -77,7 +76,15 @@ public class SewingTableBlock extends BlockWithEntity {
     }
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite()).with(SIDE, SewingTableType.SIDE);
+        World world = ctx.getWorld();
+        BlockPos pos = ctx.getBlockPos();
+        Direction direction = ctx.getPlayerFacing();
+
+        if (world.getBlockState(pos.offset(direction.rotateYCounterclockwise())).getBlock() == Blocks.AIR) {
+            return this.getDefaultState().with(FACING, ctx.getPlayerFacing().getOpposite()).with(SIDE, SewingTableType.SIDE);
+        } else {
+            return null;
+        }
     }
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
