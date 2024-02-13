@@ -1,8 +1,10 @@
-**Atlas Tweaks**
+**Discontinued Mod**
+
+**Mayhem Tweaks**
 
 ## Introduction
 
-Atlas Tweaks is an essential mod for expert modpack enthusiasts looking to enhance their gameplay experience. With a wide range of features and promising future additions, this mod aims to push the boundaries of modded Minecraft.
+Mayhem Tweaks is an essential mod for expert modpack enthusiasts looking to enhance their gameplay experience. With a wide range of features and promising future additions, this mod aims to push the boundaries of modded Minecraft.
 
 Atlas Tweaks offers an array of resources that cater specifically to expert modpacks. From improved crafting recipes and advanced automation techniques to enhanced progression systems, this mod is designed to challenge even the most seasoned players. It introduces unique mechanics that add depth and complexity to the gameplay, ensuring a rewarding and engaging adventure.
 
@@ -13,3 +15,4 @@ Whether you're a veteran modded Minecraft player seeking a fresh and demanding a
 **Mod Link**
 
 [CurseForge](https://www.curseforge.com/minecraft/mc-mods/mayhem-tweaks)
+
